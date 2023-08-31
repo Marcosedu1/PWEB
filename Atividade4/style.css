@@ -1,0 +1,128 @@
+/* Estilo para o corpo (body) */
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/abstract-grunge-decorative-relief-navy-blue-stucco-wall-texture-wide-angle-rough-colored-background_1258-28311.jpg?w=2000");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Estilo para o formulário */
+#formulario {
+    width: 400px;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Fundo branco com transparência */
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    color: black; /* Fontes pretas */
+    margin: 20px;
+}
+
+#formulario fieldset {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+#formulario legend {
+    font-weight: bold;
+}
+
+#formulario .input-label{
+    font-weight: bold;
+}
+
+.input-button{
+    margin-bottom: 20px;
+}
+
+/* Estilo para rótulos ao lado de radio buttons e checkboxes */
+
+#formulario input[type="radio"],
+#formulario input[type="checkbox"] {
+    margin-right: 5px;
+    font-size: 12pt;
+}
+
+#formulario section {
+    margin-bottom: 20px;
+}
+
+
+#formulario input[type="text"],
+#formulario input[type="email"],
+#formulario input[type="password"],
+#formulario select,
+#formulario textarea {
+    width: 94.5%;
+    font-size: 12pt;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px; /* Adicionei espaçamento entre os campos */
+}
+
+/* Estilizando os radio buttons e checkboxes */
+#formulario input[type="radio"],
+#formulario input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.form-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulario button[type="submit"],
+#formulario button[type="reset"] {
+    padding: 10px;
+    width: 40%;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(0,123,255,1) 100%, rgba(0,212,255,1) 100%);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+    font-size:15pt;
+}
+
+#formulario button[type="submit"]:hover,
+#formulario button[type="reset"]:hover {
+    background: linear-gradient(90deg, rgba(19,19,34,1) 0%, rgba(5,52,172,1) 100%);
+    transition: 500ms;
+}
+
+#formulario select {
+    width: 100%;
+}
+
+#formulario textarea {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo para o rodapé */
+.rodape {
+    display: flex;
+    color: white;
+    font-size: 14pt;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.rodape-texto{
+    padding: 0 5rem 0 5rem;
+    background-color: rgba(0, 0, 0, 0.3); /* Fundo do rodapé com transparência */
+}
