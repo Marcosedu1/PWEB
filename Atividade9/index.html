@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Atividade 9</title>
+  </head>
+  <body>
+    <h1>Pesquisa Estatística</h1>
+    <form id="pesquisa-form">
+      <label for="idade">Idade:</label>
+      <input type="number" id="idade" name="idade" required />
+
+      <label for="sexo">Sexo:</label>
+      <select id="sexo" name="sexo" required>
+        <option value="1">Masculino</option>
+        <option value="2">Feminino</option>
+      </select>
+
+      <label for="opiniao">Opinião:</label>
+      <select id="opiniao" name="opiniao" required>
+        <option value="1">Péssimo</option>
+        <option value="2">Regular</option>
+        <option value="3">Bom</option>
+        <option value="4">Ótimo</option>
+      </select>
+
+      <button type="button" onclick="registrarResposta()">
+        Registrar Resposta
+      </button>
+    </form>
+
+    <section>
+      <div>
+        <h2 id="media-idade">Média da idade das pessoas</h2>
+      </div>
+      <div>
+        <h2 id="mais-velha">Idade da pessoa mais velha</h2>
+      </div>
+      <div>
+        <h2 id="mais-nova">Idade da pessoa mais nova</h2>
+      </div>
+      <div>
+        <h2 id="qtde-pessimo">
+          A quantidade de pessoas que responderam péssimo
+        </h2>
+      </div>
+      <div>
+        <h2 id="porcentagem-bom">
+          A porcentagem de pessoas que responderam ótimo e bom
+        </h2>
+      </div>
+      <div>
+        <h2 id="qtde-homens">
+          O numero de homens que responderam ao questionario
+        </h2>
+        <h2 id="qtde-mulheres">
+          O numero de mulheres que responderam ao questionario
+        </h2>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
